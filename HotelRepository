@@ -1,0 +1,24 @@
+using System.Threading.Tasks;
+
+namespace HotelChainManagement.Repositories
+{
+    /// <summary>
+    /// Repository for managing hotel data.
+    /// </summary>
+    public class HotelRepository : IHotelRepository
+    {
+        /// <summary>
+        /// Adds a new hotel asynchronously.
+        /// </summary>
+        /// <param name="hotelDto">The hotel data transfer object.</param>
+        /// <returns>A task representing the asynchronous operation, with a boolean result indicating success or failure.</returns>
+        public async Task<bool> AddHotelAsync(HotelDto hotelDto)
+        {
+            // Data access logic for adding a hotel
+            // This is just a placeholder. Actual implementation will depend on the data source (e.g., database)
+            return await Task.FromResult(true);
+        }
+
+        // Implement other data access methods, e.g., GetHotelByIdAsync, GetAllHotelsAsync, etc.
+    }
+}
